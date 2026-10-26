@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday, Nastya 💖</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <audio id="birthday-song" loop>
+    <source src="music/birthday.mp3" type="audio/mpeg" />
+  </audio>
+
+  <button id="music-btn" class="music-btn">🎵 Play birthday song</button>
+
+  <!-- СТАРТ -->
+  <section id="start" class="screen active">
+    <div class="card">
+      <h1>Настя, с днём рождения! 🎉</h1>
+      <p class="counter" id="known-days"></p>
+      <p>
+        Пусть этот год принесет тебе много счастья, любви, хороших моментов, красивых подаркови дабл-дабл.
+      </p>
+      <p>Я сделала для тебя виртуальную открыточку, которую всегда сможет поднять тебе настроение!💌</p>
+
+      <div class="buttons">
+        <button id="yes-btn" class="yes">Посмотреть её!</button>
+        <button id="no-btn" class="no">Не, чет не хочу, спасибо</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ПАПКИ -->
+  <section id="folders" class="screen">
+    <h2>Твои мини-подарочки 🎁</h2>
+    <p class="hint">Открывай по одному — в каждом что-то особенное</p>
+
+    <div class="folders">
+      <button class="folder" data-target="gallery-nastya">
+        <span class="folder-icon">5️⃣2️⃣</span>
+        <span>Настя</span>
+      </button>
+
+      <button class="folder" data-target="gallery-memes">
+        <span class="folder-icon">🔥✨</span>
+        <span>memes</span>
+      </button>
+
+      <button class="folder" data-target="secret">
+        <span class="folder-icon">🔒</span>
+        <span>Секретная папка</span>
+      </button>
+
+      <button class="folder" data-target="quiz">
+        <span class="folder-icon">🎲</span>
+        <span>Насколько хорошо ты нас знаешь?</span>
+      </button>
+
+      <button class="folder" data-target="timeline">
+        <span class="folder-icon">🏀</span>
+        <span>Таймлайн</span>
+      </button>
+
+      <button class="folder" data-target="letter">
+        <span class="folder-icon">💌</span>
+        <span>Письмо для тебя</span>
+      </button>
+    </div>
+
+    <button class="back" data-target="start">← назад</button>
+  </section>
+
+  <!-- ГАЛЕРЕИ -->
+  <section id="gallery-nastya" class="screen">
+    <h2>Просто Настя 💌</h2>
+    <p>Потому что ты очень классная.</p>
+    <div class="gallery">
+      <figure class="photo">
+        <img src="images/1.jpg" alt="Настя" />
+        <figcaption>ПЯТЬДЕСЯТ ДВА</figcaption>
+      </figure>
+
+      <figure class="photo">
+        <img src="images/2.jpg" alt="Настя" />
+        <figcaption>MVP
+        </figcaption>
+      </figure>
+
+      <figure class="photo">
+        <img src="images/3.jpg" alt="Настя" />
+        <figcaption>без комментариев</figcaption>
+      </figure>
+
+      <figure class="photo">
+        <img src="images/4.jpg" alt="Настя" />
+        <figcaption>ниче так фоткает</figcaption>
+      </figure>
+
+      <figure class="photo">
+        <img src="images/5.jpg" alt="Настя" />
+        <figcaption>ты тут правда такая милашка</figcaption>
+      </figure>
+
+      <figure class="photo">
+        <img src="images/6.jpg" alt="Настя" />
+        <figcaption>малиновый закааат</figcaption>
+      </figure>
+
+      <figure class="photo">
+        <img src="images/7.jpg" alt="Настя" />
+        <figcaption>секси</figcaption>
+      </figure>
+
+      <figure class="photo">
+        <img src="images/8.jpg" alt="Настя" />
+        <figcaption>new year</figcaption>
+      </figure>
+
+      <figure class="photo">
+        <img src="images/9.jpg" alt="Настя" />
+        <figcaption>две легенды</figcaption>
+      </figure>
+    </div>
+    <button class="back" data-target="folders">← к папочкам</button>
+  </section>
+
+  <section id="gallery-memes" class="screen">
+    <h2>Memes 😭🔥</h2>
+    <p>я металась между нишево и аутентично</p>
+    <div class="gallery">
+  <figure class="photo">
+    <img src="images/mem0.jpg" alt="Мем" />
+    
+  </figure>
+
+  <figure class="photo">
+    <img src="images/mem1.jpg" alt="Мем" />
+    
+  </figure>
+  <figure class="photo">
+    <img src="images/3.jpg" alt="Мем" />
+    
+  </figure>
+
+  <figure class="photo">
+    <img src="images/mem2.jpg" alt="Мем" />
+    
+  </figure>
+
+  <figure class="photo">
+    <img src="images/mem3.jpg" alt="Мем" />
+    
+  </figure>
+
+  <figure class="photo">
+    <img src="images/mem4.jpg" alt="Мем" />
+    
+  </figure>
+
+  <figure class="photo">
+    <img src="images/mem5.jpg" alt="Мем" />
+    
+  </figure>
+
+  <figure class="photo">
+    <img src="images/mem6.jpg" alt="Мем" />
+    
+  </figure>
+
+  <figure class="photo">
+    <img src="images/mem7.jpg" alt="Мем" />
+    
+  </figure>
+
+  <figure class="photo">
+    <img src="images/mem8.jpg" alt="Мем" />
+    
+  </figure>
+
+  <figure class="photo">
+    <img src="images/mem9.jpg" alt="Мем" />
+    
+  </figure>
+
+  <figure class="photo">
+    <img src="images/mem10.jpg" alt="Мем" />
+    
+  </figure>
+
+  <figure class="photo">
+    <img src="images/mem11.jpg" alt="Мем" />
+    
+  </figure>
+
+  <figure class="photo">
+    <img src="images/mem12.jpg" alt="Мем" />
+    
+  </figure>
+
+  <figure class="photo">
+    <img src="images/mem13.jpg" alt="Мем" />
+    
+  </figure>
+
+  <figure class="photo">
+    <img src="images/mem14.jpg" alt="Мем" />
+    
+  </figure>
+  <figure class="photo">
+    <img src="images/mem15.jpg" alt="Мем" />
+    
+  </figure>
+  <figure class="photo">
+    <img src="images/mem16.jpg" alt="Мем" />
+    
+  </figure>
+
+  <figure class="photo">
+    <img src="images/mem17.jpg" alt="Мем" />
+    
+  </figure>
+
+  <figure class="photo">
+    <img src="images/mem18.jpg" alt="Мем" />
+    
+  </figure>
+  <figure class="photo">
+    <img src="images/mem19.jpg" alt="Мем" />
+    
+  </figure>
+</div>
+    <button class="back" data-target="folders">← к папочкам</button>
+  </section>
+
+  <!-- СЕКРЕТНАЯ ПАПКА -->
+  <section id="secret" class="screen">
+    <h2>Причины, по которым я тебя люблю ✨</h2>
+    <p>(их сильно больше на самом деле)</p>
+
+    <div class="reasons">
+      <div class="reason">
+        <div class="reason-inner">
+          <div class="reason-front">
+            <span>🔒</span>
+            <p>Причина №1</p>
+            <small>Нажми, чтобы открыть</small>
+          </div>
+          <div class="reason-back">
+            <p>Каждый день, в котором есть ты, становится самым лучшим</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="reason">
+        <div class="reason-inner">
+          <div class="reason-front">
+            <span>🔒</span>
+            <p>Причина №2</p>
+            <small>Нажми, чтобы открыть</small>
+          </div>
+          <div class="reason-back">
+            <p>Тебе можно открыть любую свою сторону и не чувствовать ничего неприятного</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="reason">
+        <div class="reason-inner">
+          <div class="reason-front">
+            <span>🔒</span>
+            <p>Причина №3</p>
+            <small>Нажми, чтобы открыть</small>
+          </div>
+          <div class="reason-back">
+            <p>Ты скидываешь смешные тиктоки и рилсы, даже если я забываю заходить и отвечать</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="reason">
+        <div class="reason-inner">
+          <div class="reason-front">
+            <span>🔒</span>
+            <p>Причина №4</p>
+            <small>Нажми, чтобы открыть</small>
+          </div>
+          <div class="reason-back">
+            <p>Ты способна заблокшотить любого надоедливого игрока (меня)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="reason">
+        <div class="reason-inner">
+          <div class="reason-front">
+            <span>🔒</span>
+            <p>Причина №5</p>
+            <small>Нажми, чтобы открыть</small>
+          </div>
+          <div class="reason-back">
+            <p>Шаришь за актуальные мемчики</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="reason">
+        <div class="reason-inner">
+          <div class="reason-front">
+            <span>🔒</span>
+            <p>Причина №6</p>
+            <small>Нажми, чтобы открыть</small>
+          </div>
+          <div class="reason-back">
+            <p>Ебать ты красивая конечно, можно как-то не настолько ахуенной быть?</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="reason">
+        <div class="reason-inner">
+          <div class="reason-front">
+            <span>🔒</span>
+            <p>Причина №7</p>
+            <small>Нажми, чтобы открыть</small>
+          </div>
+          <div class="reason-back">
+            <p>Соглашаешься на любую спонтанную и не очень рациональную идею, просто потому что это весело</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="reason">
+        <div class="reason-inner">
+          <div class="reason-front">
+            <span>🔒</span>
+            <p>Причина №8</p>
+            <small>Нажми, чтобы открыть</small>
+          </div>
+          <div class="reason-back">
+            <p>Собираешь самые стильные аутфиты, которые я когда-либо видела</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="back" data-target="folders">← к папочкам</button>
+  </section>
+
+  <!-- ВИКТОРИНА -->
+  <section id="quiz" class="screen">
+    <h2>Насколько хорошо ты нас знаешь? 🎲</h2>
+
+    <div id="quiz-box">
+      <p id="quiz-question"></p>
+      <div id="quiz-answers"></div>
+      <p id="quiz-result"></p>
+    </div>
+
+    <button class="back" data-target="folders">← к папочкам</button>
+  </section>
+
+  <!-- ТАЙМЛАЙН -->
+  <section id="timeline" class="screen">
+    <h2>Наш таймлайн 🕰️</h2>
+    <p class="hint">Было ещё очень много всего хорошего — всего не упомнить 🤍</p>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="date">10 августа 2023</div>
+        <p>
+          я пришла в университет первый раз, а потом в Вольчека взяла вк у девочки, которая "жесть она выше меня, это
+          так круто!"
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="date">11 сентября 2023</div>
+        <p>
+          я пришла на баскетбол, куда попала благодаря тебе <br>
+          ну собственно, так все и началось...
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="date">22 ноября 2023</div>
+        <p>
+          я не помню как так сложилось, но ты появилась в моем тгк и мы стали переписываться ещё и там
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="date">2024 год</div>
+        <p>
+          мы стали ездить домой вместе, болтать в метро и обсуждать баскетбольчик и не только)
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="date">27 мая 2025</div>
+        <p>
+          легендарный матч, где мы залутали футболки зенита!!
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="date">18 июня 2025</div>
+        <p>cбор локал тусовки </p>
+      </div>
+      <div class="timeline-item">
+        <div class="date">24 июня 2025</div>
+        <img src="images/24.06.25.JPG" alt="Пикми бильярд" />
+        <p>первая вылазка в пикми бильярд 🎱</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="date">9 июля 2025</div>
+        <img src="images/09.07.25.jpg" alt="Пикми бильярд" />
+        <p>
+          поехали играть в баскет на Проспект Славы 🏀
+        </p>
+      </div>
+      <div class="timeline-item">
+        <div class="date">4 сентября 2025</div>
+        <img src="images/04.09.25.JPG" alt="Пикми бильярд" />
+        <p>
+          собрались вчетвером на моей площадке поиграть 🏀
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="date">23 октября 2025</div>
+        <img src="images/23.10.25.jpg" alt="Пикми бильярд" />
+        <p>праздновали дршку риты у неё дома 🎉</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="date">12 ноября 2025</div>
+        <img src="images/12.11.25.jpg" alt="День рождения в боулинге" />
+        <p>праздновали твою дршку в боулинге 🎳💖</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="date">30 июня 2026</div>
+        <img src="images/30.06.25.JPG" alt="День рождения в боулинге" />
+        <p>праздновали дршку ани в пикми бильярде</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="date">11 июля 2026</div>
+        <img src="images/11.07.26.JPG" alt="День рождения в боулинге" />
+        <p>шашлыкиииии </p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="date">Июль–август 2026</div>
+        <img src="images/67.JPG" alt="День рождения в боулинге" />
+        <p>ЭФЭ</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="date">20 сентября 2026</div>
+        <img src="images/20.09.26.JPG" alt="День рождения в боулинге" />
+        <p>моя дршка тоже у риты дома 🎂</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="date">1 октября 2026</div>
+        <img src="images/01.10.26.jpg" alt="День рождения в боулинге" />
+        <p>рандом вылазка</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="date">24 октября 2026</div>
+        <img src="images/24.10.26.JPG" alt="День рождения в боулинге" />
+        <p>дршка риты 🎉</p>
+      </div>
+
+      <div class="timeline-item final">
+        <p>
+          и было ещё очень очень много всего хорошего! всего не упомнить </p>
+      </div>
+
+    </div>
+
+    <button class="back" data-target="folders">← к папочкам</button>
+  </section>
+
+  <!-- ПИСЬМО -->
+  <section id="letter" class="screen">
+    <div class="card letter">
+      <h2>Письмо для тебя 💌</h2>
+      <p>Моя любимая, дорогая и самая лучшая! Я поздравляю тебя с днём рождения!
+      </p>
+      <p>
+        Я хочу сказать тебе большое спасибо за все провденной время вместе, за все наши разговоры, смешные моменты, за
+        поддержку и за то, что с тобой даже обычные дни становятся особенными.
+        Я очень надеюсь, что счетчик с главной страницы никогда не остановится и что мы провдем вместе ещё много
+        времени.
+      </p>
+      <p>
+        Я желаю тебе быть самой счастливой, чтобы тебя окружали любящие тебя люди, чтобы каждое твоё желание и мечта
+        исполнялись, а каждое начинание претварялось в жизнь.
+      </p>
+      <p class="big">Я очень очень тебя люблю ❤️</p>
+
+      <button class="back" data-target="folders">← к папочкам</button>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.4/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
